@@ -14,8 +14,8 @@
 		$sql1="SELECT * FROM qiang";
 		$count1=mysql_num_rows(mysql_query($sql1)); 
 		$count1=300-$count1;
-		$str="<h2 text-align:center>"+"$count1"+"</h2>";
-		echo $str;
+		echo "<h2 text-align:center>".$count1."</h2>";
+		
 	?>
 	<form action="test.php" method="post" accept-charset="utf-8" class="former">
 		
