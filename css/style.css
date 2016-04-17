@@ -1,0 +1,27 @@
+body{
+	padding: 20px;
+}
+
+.a{
+	clear: both;
+	width: 100%;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #D8FC0F;
+    height: 40px;
+}
+
+h1{
+	text-align:center;
+}
+.former label {
+	text-align: center;
+	margin-left: 45%;
+	}
+.b{
+	
+	margin-left: 50%;
+	width: 200px;
+	
+	transform: translate(-100px,0px);
+}
