@@ -19,7 +19,7 @@ $sql1="SELECT * FROM qiang";
 $count=mysql_num_rows(mysql_query($sql1));
 mysql_query($sql,$con);
 mysql_close($con);
-echo $count;
+echo "$count";
 
 
 ?>
