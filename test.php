@@ -10,10 +10,11 @@ VALUES
 ('$_POST[name]','$_POST[IDinput]','$_POST[phonenumber]')";
 mysql_query($sql,$con);
 mysql_close($con);
-echo "恭喜你抢票成功";
 
 
-?> 
+
+?>
+<h1>抢票成功!!!!!!!!</h1> 
 
 </body>
 </html>
