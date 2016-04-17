@@ -14,9 +14,9 @@ mysql_select_db("qiangpiao",$con);
 $sql="INSERT INTO qiang (name,IDinput,phonenumber)
 VALUES
 ('$_POST[name]','$_POST[IDinput]','$_POST[phonenumber]')";
-$sql1="SELECT count(*) FROM qiang";
-mysql_query($sql1);
-$count=mysql_info();
+$sql1="SELECT * FROM qiang";
+
+$count=mysql_num_rows(mysql_query($sql1));
 mysql_query($sql,$con);
 mysql_close($con);
 echo $count;
