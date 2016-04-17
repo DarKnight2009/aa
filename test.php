@@ -11,19 +11,26 @@
 <?php 
 $con=mysql_connect("lrahalbdqmxq.rds.sae.sina.com.cn:10106","xuan","xuan95shi02yu04");
 mysql_select_db("qiangpiao",$con);
-$sql="INSERT INTO qiang (name,IDinput,phonenumber)
-VALUES
-('$_POST[name]','$_POST[IDinput]','$_POST[phonenumber]')";
 $sql1="SELECT * FROM qiang";
-
 $count=mysql_num_rows(mysql_query($sql1));
-mysql_query($sql,$con);
+if(count<10)
+{
+	$sql="INSERT INTO qiang (name,IDinput,phonenumber)
+	VALUES
+	('$_POST[name]','$_POST[IDinput]','$_POST[phonenumber]')";
+	mysql_query($sql,$con);
+	echo "<h1>抢票成功！！！</h1>";
+}
+else
+{
+	echo "<h1>亲，你晚了一步票已经抢完了</h1>";
+}
 mysql_close($con);
 echo "$count";
 
 
 ?>
-<h1>抢票成功!!!!!!!!</h1> 
+
 
 </body>
 </html>
