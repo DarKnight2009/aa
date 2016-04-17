@@ -14,7 +14,8 @@
 		$sql1="SELECT * FROM qiang";
 		$count1=mysql_num_rows(mysql_query($sql1)); 
 		$count1=300-$count1;
-		echo "$count1";
+		print "$count1";
+		mysql_close($con);
 		
 	?>
 	<form action="test.php" method="post" accept-charset="utf-8" class="former">
