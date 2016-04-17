@@ -13,7 +13,7 @@ $con=mysql_connect("lrahalbdqmxq.rds.sae.sina.com.cn:10106","xuan","xuan95shi02y
 mysql_select_db("qiangpiao",$con);
 $sql1="SELECT * FROM qiang";
 $count=mysql_num_rows(mysql_query($sql1));
-if(count<10)
+if($count<10)
 {
 	$sql="INSERT INTO qiang (name,IDinput,phonenumber)
 	VALUES
