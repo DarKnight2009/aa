@@ -14,7 +14,7 @@
 		$sql1="SELECT * FROM qiang";
 		$count1=mysql_num_rows(mysql_query($sql1)); 
 		$count1=300-$count1;
-		echo "<h2>剩余票数为：","$count1","</h2>";
+		echo "<h2>剩余票数为："."$count1"."</h2>";
 		mysql_close($con);
 		
 	?>
