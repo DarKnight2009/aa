@@ -23,7 +23,7 @@ if($count<10)
 }
 else
 {
-	echo "<h1>亲，你晚了一步票已经抢完了</h1>";
+	echo "<h1>亲，你晚了一步票已经抢完了!</h1>";
 }
 mysql_close($con);
 echo "$count";
