@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>抢票成功</title>
+		
+	
+</head>
 <body>
 
 <?php 
@@ -8,9 +14,11 @@ mysql_select_db("qiangpiao",$con);
 $sql="INSERT INTO qiang (name,IDinput,phonenumber)
 VALUES
 ('$_POST[name]','$_POST[IDinput]','$_POST[phonenumber]')";
+$sql1="SELECT count(*) FROM qiang";
+$count=mysql_query($sql1);
 mysql_query($sql,$con);
 mysql_close($con);
-
+echo $count;
 
 
 ?>
