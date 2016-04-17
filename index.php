@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>抢票系统</h1>
-	<form action="success.php" method="post" accept-charset="utf-8" class="former">
+	<form action="test.php" method="post" accept-charset="utf-8" class="former">
 		
 			<label>姓名:</label>
 			<br><br>
