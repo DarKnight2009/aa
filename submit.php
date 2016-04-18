@@ -17,6 +17,7 @@
 		{
 			echo "<p id='p'>".$result[name]."<br>".$result[IDinput]."<br>".$result[phonenumber]."</p>";
 			$sql2="DELETE FROM qiang WHERE IDinput='$_POST[IDinput]'";
+			mysql_query($sql2);
 		}
 		else
 		{
