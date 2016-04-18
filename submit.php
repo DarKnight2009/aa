@@ -15,7 +15,7 @@
 		$result=mysql_fetch_array(mysql_query($sql1));
 		if(mysql_num_rows(mysql_query($sql1)))
 		{
-			echo "<p id='p'>".$result[name].$result[IDinput].$result[phonenumber]."</p>";
+			echo "<p id='p'>".$result[name]."<br>".$result[IDinput]."<br>".$result[phonenumber]."</p>";
 			$sql2="DELETE FROM qiang WHERE IDinput='$_POST[IDinput]'";
 		}
 		else
