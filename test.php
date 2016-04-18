@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>抢票成功</title>
-		
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">	
 	<link rel="stylesheet" href="dist/style/weui.css">
 </head>
 <body>
@@ -15,7 +15,6 @@ $sql1="SELECT * FROM qiang";
 $count=mysql_num_rows(mysql_query($sql1));
 $sql2="SELECT * FROM qiang WHERE phonenumber='$_POST[phonenumber]'";
 $sql3="SELECT * FROM qiang WHERE IDinput='$_POST[IDinput]'";
-echo "哒哒哒";
 if(mysql_num_rows(mysql_query($sql2))||mysql_num_rows(mysql_query($sql3)))
 {
 	echo "<div class='page'>".
