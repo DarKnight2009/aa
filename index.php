@@ -16,7 +16,7 @@
 
 		
 	
-    <div class="weui_cells_title">表单</div>
+    <div class="weui_cells_title">个人信息</div>
         <div class="weui_cells weui_cells_form">
             <div class="weui_cell">
                 <div class="weui_cell_hd"><label class="weui_label">姓名  </label></div>
