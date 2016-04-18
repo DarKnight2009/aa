@@ -23,7 +23,7 @@
 			<input type="text" name="phonenumber" class="b">	
 			<br><br><br><br>	
 		
-		<input type="submit" name="ok" value="抢票" class="a" >
+		<input type="submit" name="ok" value="抢票" class="a" id="sure" >
 	</form>
 	
 </body>

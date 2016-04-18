@@ -11,7 +11,28 @@ function xmlreq(){
     }
   	}
 }
+function test(){
+	var input=document.getElementsByTagName("input");
+	var ID=input[1].value;
+	var number=input[2].value;
+	if(ID.length==10&&number.length==11)
+		{
+			return true;
+		}
+	else 
+	{
+		alert("请输入正确的个人信息");
+		return false;
+	}
+}
+function click(){
+	var ok=document.getElementById("sure");
+	ok.onclick=test;
+}
 function settime(){
 	window.setInterval(xmlreq,1000);
 }
-window.onload=settime;
+window.onload=function(){
+	settime();
+	click();
+};
