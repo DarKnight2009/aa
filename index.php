@@ -13,7 +13,7 @@
 	<h1>抢票系统</h1>
 	<h2 id="title"></h2>
 	<br><br><br>
-	<form action="test.php" method="post" accept-charset="utf-8" >
+	<form action="test.php" method="post" accept-charset="utf-8"  >
 
 		
 	
@@ -40,7 +40,7 @@
             </div>
          </div>
      </div>  
-     <input type="button" name="ok" value="抢票"  id="sure" class="weui_btn weui_btn_primary" >
+     <input type="submit" name="ok" value="抢票"  id="sure" class="weui_btn weui_btn_primary" >
      </form>  
     
 </div>

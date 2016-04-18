@@ -29,7 +29,7 @@ function click(){
 	var ok=document.getElementById("sure");
 	ok.onclick=function(){
 		test();
-		this.form.submit();
+		//this.form.submit();
 	};
 }
 function settime(){
