@@ -40,7 +40,9 @@
             </div>
          </div>
      </div>  
-     <input type="submit" name="ok" value="抢票" class="a" id="sure" class="weui_btn">
+     <input type="button" name="ok" value="抢票"  id="sure" class="weui_btn weui_btn_primary" >
      </form>  
+    
+</div>
 </body>
 </html>

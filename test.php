@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>抢票成功</title>
 		
-	
+	<link rel="stylesheet" href="dist/style/weui.css">
 </head>
 <body>
 
@@ -17,7 +17,13 @@ $sql2="SELECT * FROM qiang WHERE phonenumber='$_POST[phonenumber]'";
 $sql3="SELECT * FROM qiang WHERE IDinput='$_POST[IDinput]'";
 if(mysql_num_rows(mysql_query($sql2))||mysql_num_rows(mysql_query($sql3)))
 {
-	echo "<h1>请勿使用相同手机号或学生证号抢票!</h1>";
+	echo "<div class="page">
+    		<div class="weui_msg">
+        	<div class="weui_icon_area"><i class="weui_icon_warn weui_icon_msg"></i></div>
+        	<div class="weui_text_area">
+            <h2 class="weui_msg_title">抢票失败</h2>
+            <p class="weui_msg_desc">一个人只能抢一张票哟！</p>
+        </div>";
 }
 else
 {
@@ -27,11 +33,26 @@ else
 		VALUES
 		('$_POST[name]','$_POST[IDinput]','$_POST[phonenumber]')";
 		mysql_query($sql,$con);
-		echo "<h1>抢票成功！！！</h1>";
+		echo " 
+		<div class="page">
+    		<div class="weui_msg">
+        	<div class="weui_icon_area"><i class="weui_icon_success weui_icon_msg"></i></div>
+        	<div class="weui_text_area">
+            <h2 class="weui_msg_title">抢票成功</h2>
+            <p class="weui_msg_desc">请于日期来领票</p>
+        </div>
+        
+    </div>";
 	}
 	else
 	{
-		echo "<h1>亲，你晚了一步票已经抢完了!</h1>";
+		echo "<div class="page">
+    		<div class="weui_msg">
+        	<div class="weui_icon_area"><i class="weui_icon_warn weui_icon_msg"></i></div>
+        	<div class="weui_text_area">
+            <h2 class="weui_msg_title">抢票失败</h2>
+            <p class="weui_msg_desc">亲，很遗憾，票已经抢完了！</p>
+        </div>";
 	}
 }	
 mysql_close($con);

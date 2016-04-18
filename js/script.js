@@ -27,7 +27,10 @@ function test(){
 }
 function click(){
 	var ok=document.getElementById("sure");
-	ok.onclick=test;
+	ok.onclick=function(){
+		test();
+		this.form.submit();
+	};
 }
 function settime(){
 	window.setInterval(xmlreq,1000);
