@@ -36,10 +36,10 @@ else
 		echo 
 		"<div class='page'>".
     		"<div class='weui_msg'>".
-        	"<div class='weui_icon_area'>"."<i class='weui_icon_warn weui_icon_msg'></i></div>".
+        	"<div class='weui_icon_area'>"."<i class='weui_icon_success weui_icon_msg'></i></div>".
         	"<div class='weui_text_area'>".
-            "<h2 class='weui_msg_title'>抢票失败</h2>".
-            "<p class='weui_msg_desc'>一个人只能抢一张票哟！</p>
+            "<h2 class='weui_msg_title'>抢票成功</h2>".
+            "<p class='weui_msg_desc'>请于某年某月某日来领票！</p>
         </div>";
 	}
 	else
@@ -49,7 +49,7 @@ else
         	"<div class='weui_icon_area'>"."<i class='weui_icon_warn weui_icon_msg'></i></div>".
         	"<div class='weui_text_area'>".
             "<h2 class='weui_msg_title'>抢票失败</h2>".
-            "<p class='weui_msg_desc'>一个人只能抢一张票哟！</p>
+            "<p class='weui_msg_desc'>亲，很遗憾票已经抢完！</p>
         </div>";
 	}
 }	
