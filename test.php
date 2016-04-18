@@ -15,7 +15,7 @@ $sql1="SELECT * FROM qiang";
 $count=mysql_num_rows(mysql_query($sql1));
 $sql2="SELECT * FROM qiang WHERE phonenumber='$_POST[phonenumber]'";
 $sql3="SELECT * FROM qiang WHERE IDinput='$_POST[IDinput]'";
-if(mysql_num_rows(mysql_query($sql2))&&mysql_num_rows(mysql_query($sql3)))
+if(mysql_num_rows(mysql_query($sql2))||mysql_num_rows(mysql_query($sql3)))
 {
 	echo "<h1>请勿使用相同手机号或学生证号抢票!</h1>";
 }
