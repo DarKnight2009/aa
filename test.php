@@ -34,25 +34,23 @@ else
 		VALUES
 		('$_POST[name]','$_POST[IDinput]','$_POST[phonenumber]')";
 		mysql_query($sql,$con);
-		echo " 
-		<div class="page">
-    		<div class="weui_msg">
-        	<div class="weui_icon_area"><i class="weui_icon_success weui_icon_msg"></i></div>
-        	<div class="weui_text_area">
-            <h2 class="weui_msg_title">抢票成功</h2>
-            <p class="weui_msg_desc">请于日期来领票</p>
-        </div>
-        
-    </div>";
+		echo 
+		"<div class='page'>".
+    		"<div class='weui_msg'>".
+        	"<div class='weui_icon_area'>"."<i class='weui_icon_warn weui_icon_msg'></i></div>".
+        	"<div class='weui_text_area'>".
+            "<h2 class='weui_msg_title'>抢票失败</h2>".
+            "<p class='weui_msg_desc'>一个人只能抢一张票哟！</p>
+        </div>";
 	}
 	else
 	{
-		echo "<div class="page">
-    		<div class="weui_msg">
-        	<div class="weui_icon_area"><i class="weui_icon_warn weui_icon_msg"></i></div>
-        	<div class="weui_text_area">
-            <h2 class="weui_msg_title">抢票失败</h2>
-            <p class="weui_msg_desc">亲，很遗憾，票已经抢完了！</p>
+		echo "<div class='page'>".
+    		"<div class='weui_msg'>".
+        	"<div class='weui_icon_area'>"."<i class='weui_icon_warn weui_icon_msg'></i></div>".
+        	"<div class='weui_text_area'>".
+            "<h2 class='weui_msg_title'>抢票失败</h2>".
+            "<p class='weui_msg_desc'>一个人只能抢一张票哟！</p>
         </div>";
 	}
 }	
