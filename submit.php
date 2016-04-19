@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">	
 	<link rel="stylesheet" href="dist/style/weui.css">
-	
+	<script src="js/script1.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <body>
 	<?php
@@ -15,9 +15,8 @@
 		$result=mysql_fetch_array(mysql_query($sql1));
 		if(mysql_num_rows(mysql_query($sql1)))
 		{
-			echo "<p id='p'>".$result[name]."<br>".$result[IDinput]."<br>".$result[phonenumber]."</p>";
-			$sql2="DELETE FROM qiang WHERE IDinput='$_POST[IDinput]'";
-			mysql_query($sql2);
+			echo "<p id='p'>".$result[name]."</p><p id='input'>".$result[IDinput]."</p><p>".$result[phonenumber]."</p>";
+			
 		}
 		else
 		{
@@ -27,7 +26,7 @@
 
 		
 	?>
-	<a href="lingpiao.php" class="weui_btn weui_btn_primary">领票</a>
+	<a href="lingpiao.php" class="weui_btn weui_btn_primary" id="ling">领票</a>
 	<a href="lingpiao.php" class="weui_btn weui_btn_primary">取消</a>
 
 </body>
