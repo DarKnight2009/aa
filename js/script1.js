@@ -5,7 +5,7 @@ function xmlreq(){
 	xmlhttp=new XMLHttpRequest();
 	xmlhttp.open("GET","ok.php?id="+input.innerHTML,true);
 	xmlhttp.send();
-  alert(input.innerHTML);
+ 
 	xmlhttp.onreadystatechange=function()
   	{
   	   if (xmlhttp.readyState==4 && xmlhttp.status==200)
