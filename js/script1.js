@@ -10,7 +10,7 @@ function xmlreq(){
   	{
   	   if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
-    	   window.location.href="submit.php"
+    	   window.location.href="lingpiao.php"
         }
       
   	}
