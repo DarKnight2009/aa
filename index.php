@@ -35,7 +35,7 @@
             <div class="weui_cell">
                 <div class="weui_cell_hd"><label class="weui_label">电话</label></div>
                 <div class="weui_cell_bd weui_cell_primary">
-                    <input class="weui_input" type="text" name="phonenumber" placeholder="请输入电话号码"/>
+                    <input class="weui_input" type="text" name="phonenumber" placeholder="请输入电话号码" id="number" />
                 </div>
             </div>
          </div>

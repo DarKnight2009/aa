@@ -12,9 +12,9 @@ function xmlreq(){
   	}
 }
 function test(){
-	var input=document.getElementsByTagName("input");
-	var ID=input[1].value;
-	var number=input[2].value;
+	var input=document.getElementById("number");
+	
+	var number=input.value;
 	if(number.length==11)
 		{
 			return true;
