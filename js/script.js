@@ -33,6 +33,7 @@ function settime(){
 	window.setInterval(xmlreq,1000);
 }
 window.onload=function(){
+	xmlreq();
 	settime();
 	click();
 };
