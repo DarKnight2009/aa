@@ -13,7 +13,7 @@
 	<h1>抢票系统</h1>
 	<h2 id="title"></h2>
 	<br><br><br>
-	<form action="test.php" method="post" accept-charset="utf-8"  >
+	<form action="test.php" method="post" accept-charset="utf-8" style={{cursor:'pointer'}} >
 
 		
 	
