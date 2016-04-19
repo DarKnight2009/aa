@@ -5,18 +5,16 @@ function xmlreq(){
 	xmlhttp=new XMLHttpRequest();
 	xmlhttp.open("GET","ok.php?id="+input.innerHTML,true);
 	xmlhttp.send();
- 
+
 	xmlhttp.onreadystatechange=function()
   	{
   	   if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
-    	   return true;
+    	   window.location.href="submit.php"
         }
-      else
-        {
-        return false;
-        }
+      
   	}
+
 }
 function click(){
   var button=document.getElementById('ling');

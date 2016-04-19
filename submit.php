@@ -26,7 +26,8 @@
 
 		
 	?>
-	<a href="lingpiao.php" class="weui_btn weui_btn_primary" id="ling">领票</a>
+	<input type="button" name="ling" value="领票" class="weui_btn weui_btn_primary" id="ling" >
+	
 	<a href="lingpiao.php" class="weui_btn weui_btn_primary">取消</a>
 
 </body>
