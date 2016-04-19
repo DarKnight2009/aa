@@ -15,7 +15,7 @@ function test(){
 	var input=document.getElementsByTagName("input");
 	var ID=input[1].value;
 	var number=input[2].value;
-	if(ID.length==10&&number.length==11)
+	if(number.length==11)
 		{
 			return true;
 		}
@@ -27,10 +27,7 @@ function test(){
 }
 function click(){
 	var ok=document.getElementById("sure");
-	ok.onclick=function(){
-		test();
-		//this.form.submit();
-	};
+	ok.onclick=test;
 }
 function settime(){
 	window.setInterval(xmlreq,1000);
