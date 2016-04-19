@@ -28,6 +28,7 @@ function test(){
 function click(){
 	var ok=document.getElementById("sure");
 	ok.onclick=test;
+	ok.touchend=test;
 }
 function settime(){
 	window.setInterval(xmlreq,1000);
