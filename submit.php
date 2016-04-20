@@ -18,7 +18,11 @@
 			echo "<p id='p'>".$result[name]."</p><p id='input'>".$result[IDinput]."</p><p>".$result[phonenumber]."</p>";
 			
 		}
-		else 
+		else if(mysql_num_rows(mysql_query($sql1))&&$result[isok]=='0')
+		{
+			echo "此人已经领过票";
+		}
+		else
 		{
 			echo "查无此人请确认";
 		}
