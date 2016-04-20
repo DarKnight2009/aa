@@ -29,9 +29,9 @@ else
 {
 	if($count<100)
 	{
-		$sql="INSERT INTO qiang (name,IDinput,phonenumber)
+		$sql="INSERT INTO qiang (name,IDinput,phonenumber，isok)
 		VALUES
-		('$_POST[name]','$_POST[IDinput]','$_POST[phonenumber]')";
+		('$_POST[name]','$_POST[IDinput]','$_POST[phonenumber]','1')";
 		mysql_query($sql,$con);
 		echo 
 		"<div class='page'>".

@@ -13,12 +13,12 @@
 		mysql_select_db("qiangpiao",$con);
 		$sql1="SELECT * FROM qiang WHERE IDinput='$_POST[IDinput]'";
 		$result=mysql_fetch_array(mysql_query($sql1));
-		if(mysql_num_rows(mysql_query($sql1)))
+		if(mysql_num_rows(mysql_query($sql1))&&$result[isok]=='1')
 		{
 			echo "<p id='p'>".$result[name]."</p><p id='input'>".$result[IDinput]."</p><p>".$result[phonenumber]."</p>";
 			
 		}
-		else
+		else 
 		{
 			echo "查无此人请确认";
 		}
