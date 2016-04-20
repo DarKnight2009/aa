@@ -31,7 +31,7 @@ function click(){
 	ok.touchend=test;
 }
 function settime(){
-	window.setInterval(xmlreq,1000);
+	window.setInterval(xmlreq,3000);
 }
 window.onload=function(){
 	xmlreq();
