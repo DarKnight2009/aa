@@ -15,7 +15,7 @@
 		$result=mysql_fetch_array(mysql_query($sql1));
 		if(mysql_num_rows(mysql_query($sql1))&&$result[isok]=='1')
 		{
-			echo "<p id='p'>".$result[name]."</p><p id='input'>".$result[IDinput]."</p><p>".$result[phonenumber]."</p>";
+			echo "<p id='p'>".$result[name]."</p><p id='input'>".$result[IDinput]."</p><p>".$result[phonenumber]."</p><p>".$result[major]."</p>";
 			
 		}
 		else if(mysql_num_rows(mysql_query($sql1))&&$result[isok]=='0')
