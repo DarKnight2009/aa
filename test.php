@@ -15,7 +15,7 @@ $sql1="SELECT * FROM qiang";
 $count=mysql_num_rows(mysql_query($sql1));
 $sql2="SELECT * FROM qiang WHERE phonenumber='$_POST[phonenumber]'";
 $sql3="SELECT * FROM qiang WHERE IDinput='$_POST[IDinput]'";
-$sql4="SELECT * FROM qiang WHERE IDinput='0'";
+$sql4="DELETE FROM qiang WHERE IDinput=''";
 mysql_query($sql4);
 if(mysql_num_rows(mysql_query($sql2))||mysql_num_rows(mysql_query($sql3)))//判断是否重复决定是否写入数据库
 {
