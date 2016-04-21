@@ -38,6 +38,17 @@
                     <input class="weui_input" type="text" name="phonenumber" placeholder="请输入电话号码" id="number" />
                 </div>
             </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">专业</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <select class="weui_input" name="major">
+					<option value="volvo">Volvo</option>
+					<option value="saab">Saab</option>
+					<option value="fiat">Fiat</option>
+					<option value="audi">Audi</option>
+					</select>
+                </div>
+            </div>
          </div>
      </div>  
      <input type="submit" name="ok" value="抢票"  id="sure" class="weui_btn weui_btn_primary" >

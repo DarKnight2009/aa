@@ -15,7 +15,7 @@ $sql1="SELECT * FROM qiang";
 $count=mysql_num_rows(mysql_query($sql1));
 $sql2="SELECT * FROM qiang WHERE phonenumber='$_POST[phonenumber]'";
 $sql3="SELECT * FROM qiang WHERE IDinput='$_POST[IDinput]'";
-if(mysql_num_rows(mysql_query($sql2))||mysql_num_rows(mysql_query($sql3)))
+if(mysql_num_rows(mysql_query($sql2))||mysql_num_rows(mysql_query($sql3)))//判断是否重复决定是否写入数据库
 {
 	echo "<div class='page'>".
     		"<div class='weui_msg'>".
@@ -27,11 +27,11 @@ if(mysql_num_rows(mysql_query($sql2))||mysql_num_rows(mysql_query($sql3)))
 }
 else
 {
-	if($count<100)
+	if($count<100)//设置抢票人数
 	{
-		$sql="INSERT INTO qiang (name,IDinput,phonenumber,isok)
+		$sql="INSERT INTO qiang (name,IDinput,phonenumber,major,isok)
 		VALUES
-		('$_POST[name]','$_POST[IDinput]','$_POST[phonenumber]','1')";
+		('$_POST[name]','$_POST[IDinput]','$_POST[phonenumber]','$_POST[major]','1')";
 		mysql_query($sql,$con);
 		echo 
 		"<div class='page'>".
