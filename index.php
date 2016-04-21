@@ -43,6 +43,7 @@
                 <div class="weui_cell_bd weui_cell_primary">
                     <select class="weui_input" name="major">
                     <option value="电子信息与通信学院">电子信息与通信学院</option>
+                    <option value="机械科学与工程学院">机械科学与工程学院</option>
 					<option value="数学与统计学院">数学与统计学院</option>
 					<option value="计算机科学与技术学院">计算机科学与技术学院</option>
 					<option value="新闻与信息传播学院">新闻与信息传播学院</option>
@@ -52,7 +53,6 @@
 					<option value="化学与化工学院">化学与化工学院</option>
 					<option value="自动化学院">自动化学院</option>
 					<option value="公共管理学院">公共管理学院</option>
-					<option value="机械科学与工程学院">机械科学与工程学院</option>
 					<option value="建筑与城市规划学院">建筑与城市规划学院</option>
 					<option value="人文学院">人文学院</option>
 					<option value="材料科学与工程学院">材料科学与工程学院</option>
@@ -74,6 +74,7 @@
 					<option value="工程科学学院（国际化示范学院）">工程科学学院（国际化示范学院）</option>
 					<option value="外国语学院">外国语学院</option>
 					<option value="光学与电子信息学院">光学与电子信息学院</option>
+					<option value="其它">其它</option>
 				
 					</select>
                 </div>
