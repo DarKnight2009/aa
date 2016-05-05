@@ -41,7 +41,7 @@ else
         	"<div class='weui_icon_area'>"."<i class='weui_icon_success weui_icon_msg'></i></div>".
         	"<div class='weui_text_area'>".
             "<h2 class='weui_msg_title'>抢票成功</h2>".
-            "<p class='weui_msg_desc'>请于某年某月某日来领票！</p>
+            "<p class='weui_msg_desc'>欢迎观看演出！</p>
         </div>";
 	}
 	else
