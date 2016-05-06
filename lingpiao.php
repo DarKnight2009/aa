@@ -12,9 +12,9 @@
 	
 	<div class="weui_cells weui_cells_form">
 			<div class="weui_cell">
-                <div class="weui_cell_hd"><label class="weui_label">证件号</label></div>
+                <div class="weui_cell_hd"><label class="weui_label">手机号码</label></div>
                 <div class="weui_cell_bd weui_cell_primary">
-                    <input class="weui_input" type="text" name="IDinput" placeholder="学生证号首字母大写"/>
+                    <input class="weui_input" type="text" name="phonenumber" placeholder="请输入手机号码"/>
                 </div>
             </div>
     </div>
