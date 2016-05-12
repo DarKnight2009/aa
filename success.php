@@ -12,8 +12,8 @@
 		mysql_select_db("qiangpiao",$con);
 		$sql1="SELECT * FROM qiang WHERE isok='1'";
 		$count1=mysql_num_rows(mysql_query($sql1)); //获得数据库的表的行数判断当前已发出票数
-		$count1=200-$count1;
-		echo "<h2>剩余票数为："."$count1"."</h2>";
+		$count1=50-$count1;
+		echo "剩余票数为："."$count1";
 		mysql_close($con);
 		
 	?>

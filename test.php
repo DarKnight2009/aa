@@ -29,7 +29,7 @@ if(mysql_num_rows(mysql_query($sql2))||mysql_num_rows(mysql_query($sql3)))//判�
 }
 else
 {
-	if($count<200)//设置抢票人数
+	if($count<50)//设置抢票人数
 	{
 		$sql="INSERT INTO qiang (name,IDinput,phonenumber,major,isok)
 		VALUES
