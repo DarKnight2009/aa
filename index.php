@@ -8,20 +8,20 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="dist/style/weui.css">
 	
-	<!--<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>-->
+	<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <body>
 	<h1>抢票系统</h1>
 	
-	 <div class='page'>
+	 <!--<div class='page'>
     		<div class='weui_msg'>
         	<div class='weui_icon_area'>
         	<i class='weui_icon_warn weui_icon_msg'></i></div>
         	<div class='weui_text_area'>
             <h2 class='weui_msg_title'>很遗憾！</h2>
             <p class='weui_msg_desc'>本次演出抢票活动已经结束</p>
-        </div>
-	<!--
+        </div>-->
+	
 	<h2 id="title"></h2>
 	<br><br><br>
 	
@@ -97,6 +97,6 @@
      </form>  
     
 </div>
--->
+
 </body>
 </html>
